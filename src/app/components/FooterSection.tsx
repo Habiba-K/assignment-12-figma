@@ -8,9 +8,9 @@ import language from "@/app/assests/Icon.png";
 import Button from "./Button";
 const FooterSection = () => {
   return (
-    <div className="w-[1920px] h-[474px] bg-[#043873]">
-      <div className="flex justify-center">
-        <div className="grid grid-cols-5 gap-24 pb-[100px]">
+    <div className="max-w-[1920px] lg:h-[474px] bg-[#043873] ">
+      <div className="flex justify-start lg:justify-center ">
+        <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-20 px-5 pb-[20px] mt-20">
           <div className="text-white w-[205.25px] h-[169px] ">
             <Image
               src={logo}
@@ -61,35 +61,36 @@ const FooterSection = () => {
               btnColor="text-white"
               btnText="Start today ->"
               bgColor="bg-[#4F9CF9]"
-              mrl="mt-4"
-              pdy="py-5"
+              mrl="mt-0"
+              pdy="py-2"
               pdx="px-6"
             >
-              {" "}
             </Button>
           </div>
         </div>
       </div>
-      <div className="pt-32 pr-40 pl-40 ">
-        <hr className="h-2  bg-[#2E4E73] opacity-50 flex " />
-        <div className="grid grid-cols-2 p-5">
-          <ul className="text-[#FFFFFF] bg-[#043873] grid grid-cols-5 ">
+      <div className="pt-32 ">
+        <hr className="h-2  bg-[#2E4E73] opacity-50 flex  " />
+        <div className="lg:grid lg:grid-cols-2 p-5 hidden">
+          <ul className="text-[#FFFFFF] bg-[#043873] grid  grid-cols-5 ">
             <li >
+              <div className="flex flex-row">
               <Image
-                src={language}
-                alt="logo"
-                width={19}
-                height={19}
-                className="inline-block "
-              />
-              <select className="text-[#FFFFFF] bg-[#043873]" name="" id="">
-                <option value="english">English</option>
-                <option value="english">Urdu</option>
-              </select></li>
-            <li>Terms & Privacy</li>
-            <li>Security</li>
-            <li>Status</li>
-            <li>@2021WhitespaceLLC.</li>
+                  src={language}
+                  alt="logo"
+                  width={19}
+                  height={19}
+                  className="inline-block "
+                />
+                <select className="text-[#FFFFFF] bg-[#043873]" name="" id="">
+                  <option value="english">English</option>
+                  <option value="english">Urdu</option>
+                </select>
+                </div></li>
+            <li className="pl-5">Terms & Privacy</li>
+            <li className="pl-5">Security</li>
+            <li className="pl-5">Status</li>
+            <li className="pl-5">@2021WhitespaceLLC.</li>
           </ul>
           <div className="flex justify-end">
             <div className="pr-8">
